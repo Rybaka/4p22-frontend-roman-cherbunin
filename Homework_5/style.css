@@ -1,0 +1,153 @@
+* {
+    font-family: 'PatsySans';
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: #dcdcdc;
+  }
+  
+  .haeder-address-book {
+    position: fixed;
+    width: 1440px;
+    height: 89px;
+    top: 0px;
+    background: hwb(120 31% 15%);
+  }
+
+  .haeder-address-book__h1 {
+    position: absolute;
+    width: 403px;
+    height: 63px;
+    left: 28px;
+    top: 6px;
+    margin: 0;
+    font-family: 'PatsySans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 63px;
+    color: #ffffff;
+  }
+  
+  .main-address-book {
+    width: 1439px;
+    position: fixed;
+    margin: 0px 0px 0px 0px;
+    height: 90vh;
+    background: #ffffff;
+    top: 89px;
+  }
+
+  .aside-address-book {
+    position: relative;
+    width: 300px;
+    height: 457px;
+    top: 47px;
+    border-right: 3px solid #b7b1b1;
+  }
+
+  .aside-address-book__h2 {
+    position: absolute;
+    left: 27px;
+    font-family: 'PatsySans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  .aside-address-book__container-links {
+    position: absolute;
+    left: 14px;
+    top: 64px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .aside-address-book__links {
+    font-family: 'PatsySans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #b211a4;
+  }
+
+  .aside-address-book__margin-links {
+    margin: 14px;
+  }
+  
+  .section-addres-book {
+    position: absolute;
+    width: 1145px;
+    height: 699px;
+    left: 293px;
+    top: 55px;
+  }
+
+  .section-addres-book__scroll {
+    position: absolute;
+    overflow-y: scroll;
+    width: 1145px;
+    height: 796px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .section-addres-book__capital-letter-a {
+    width: 1123px;
+    height: 41px;
+    position: sticky;
+    left: 469px;
+    top: 0px;
+    margin: 0;
+  
+    color: #ffffff;
+    font-family: 'PatsySans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 39px;
+    padding-left: 11px;
+  
+    background: green;
+  }
+  
+  .section-addres-book__container-text {
+    list-style-type: none;
+    position: ;
+    width: 132px;
+    height: max-content;
+    left: 13px;
+    top: 54px;
+    padding-left: 19px;
+    padding-top: 61px;
+    margin: 0;
+    font-family: 'PatsySans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  
+  .section-addres-book__capital-letter-a_b {
+    position: sticky;
+    background: blue;
+  }
+  
+  .section-addres-book__capital-letter-a_v {
+    position: sticky;
+    background: red;
+  }
+
+  @font-face {
+    font-family: 'PatsySans'; 
+    src: url("PatsySans.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+  
