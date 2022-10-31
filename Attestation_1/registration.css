@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Robotobold;
+    font-family: "Robotobold";
     color: #787878;
     padding: 0;
 }
@@ -181,7 +181,7 @@ body {
 
 .main-container__gender {
     display: flexbox;
-    margin-left: calc(24 / 1440 * 100vw);
+    margin-left: calc(25 / 1440 * 100vw);
 }
 
 .main-container__legend {
@@ -193,56 +193,39 @@ body {
     display: flex;
     align-items: center;
     height: calc(19 / 1440 * 100vw);
-    margin-top: calc(10 / 1440 * 100vw);
+    margin-top: calc(11 / 1440 * 100vw);
+    margin-left: calc(2 / 1440 * 100vw);
     position: relative;
 }
 
-.main-container__input_gender {
-    opacity: 0;
-    position: absolute;
-    width: calc(100 / 1440 * 100vw);
-    height: 100%;
-}
-
 .main-container__label_gender {
-    padding-left: calc(30 / 1440 * 100vw);
+    padding: calc(1 / 1440 * 100vw) 0 0 calc(11 / 1440 * 100vw);
     align-items: center;
     font-family: Roboto;
     font-size: calc(14 / 1440 * 100vw);
 }
 
-
-.main-container__label_gender::after {
-    content: '';
-    position: absolute;
-    width: calc(12 / 1440 * 100vw);
-    height: calc(12 / 1440 * 100vw);
-    left: calc(4 / 1440 * 100vw);
-    top: calc(4 / 1440 * 100vw);
-    background-color: #787878;
+.main-container__radio_gender  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     border-radius: 50%;
-    opacity: 0;
-    transition: .5 opacity;
-}
-
-.main-container__input_gender:checked + label::after {
-    opacity: 1;
-}
-
-.main-container__label_gender::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: calc(16 / 1440 * 100vw);
-    height: calc(16 / 1440 * 100vw);
+    width: calc(19 / 1440 * 100vw);
+    height: calc(19 / 1440 * 100vw);
     border: 2px solid #787878;
-    border-radius: calc(50 / 1440 * 100vw);
+    transition: 0.2s all linear;
+    outline: none;
+    position: relative;
 }
+  
+.main-container__radio_gender  input:checked {
+    box-shadow: inset 0px 0px 0px calc(2 / 1440 * 100vw) #ffffff;
+    background-color: #787878;
+}
+
 
 .main-container__resume {
     margin: calc(10 / 1440 * 100vw) calc(25 / 1440 * 100vw);
-    
 }
 
 .main-container__label_resume {
@@ -258,56 +241,41 @@ body {
     width: calc(509 / 1440 * 100vw);
     height: calc(246 / 1440 * 100vw);
     font-size: calc(28 / 1440 * 100vw);
-    font-family: Robotobold;
-    padding: calc(7 / 1440 * 100vw) 0 0 calc(13 / 1440 * 100vw);;
+    font-family: "Robotobold";
+    padding: calc(7 / 1440 * 100vw) 0 0 calc(13 / 1440 * 100vw);
+    color: #787878;
 }
 
 .main-container__agree {
     display: flex;
-    margin: calc(21 / 1440 * 100vw) 0 0 calc(23 / 1440 * 100vw);
+    margin: calc(20 / 1440 * 100vw) 0 0 calc(23 / 1440 * 100vw);
     position: relative;
 }
 
-.main-container__checkbox_agree {
-    position: absolute;
-    width: calc(24 / 1440 * 100vw);;
+.main-container__agree input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: calc(24 / 1440 * 100vw);
     height: calc(24 / 1440 * 100vw);
-    opacity: 0;
-}
-
-.main-container__agree_text::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: calc(20 / 1440 * 100vw);
-    height: calc(20 / 1440 * 100vw);
     border: 2px solid #787878;
+    transition: 0.2s all linear;
+    outline: none;
+    position: relative;
 }
-
-.main-container__agree_text::after {
-    content: '';
-    background: #787878;
-    width: calc(12 / 1440 * 100vw);
-    height: calc(12 / 1440 * 100vw);
-    background-size: 100% 100%;
-    position: absolute;
-    left: calc(6 / 1440 * 100vw);
-    top: calc(6 / 1440 * 100vw);
-    opacity: 0;
-    transition: .3 opacity;
-}
-
-.main-container__checkbox_agree:checked + .main-container__agree_text::after {
-    opacity: 1;
+  
+.main-container__agree input:checked {
+    background-color: #787878;
+    box-shadow: inset 0px 0px 0px calc(4 / 1440 * 100vw) #ffffff;
+  
 }
 
 .main-container__agree_text {
     margin-top: calc(5 / 1440 * 100vw);
     padding: 0;
-    padding-left: calc(34 / 1440 * 100vw);
+    padding-left: calc(11 / 1440 * 100vw);
     font-size: calc(14 / 1440 * 100vw);
-    font-family: Roboto;
+    font-family: "Roboto";
 }
 
 .main-container__button {
@@ -316,7 +284,7 @@ body {
     width: calc(180 / 1440 * 100vw);
     height: calc(52 / 1440 * 100vw);
     text-align: center;
-    margin: calc(58 / 1440 * 100vw) auto calc(4 / 1440 * 100vw);
+    margin: calc(56 / 1440 * 100vw) auto calc(4 / 1440 * 100vw);
 }
 
 .main-container__button:hover {
@@ -341,7 +309,7 @@ body {
     .header {
         height: calc(80 / 768 * 100vw);
         box-shadow: 0px calc(4 / 768 * 100vw) calc(4 / 768 * 100vw) rgba(0, 0, 0, 0.25);
-        font-family: Inter-Bold;
+        font-family: "Inter-Bold";
     }
     
     .header-Logo {
